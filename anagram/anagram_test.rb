@@ -30,10 +30,6 @@ end
 # class
 class Anagram
   def self.anagram?(word1, word2)
-    [word1, word2].each do |array|
-      binding.pry
-      sanitize(array)
-    end
     chars1 = sanitize(word1)
     chars2 = sanitize(word2)
     clean1 = whitespace(chars1)
