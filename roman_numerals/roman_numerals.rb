@@ -19,11 +19,10 @@ class RomanNumerals
   }.freeze
 
   def self.to_roman(num)
-    n = self
     roman = ''
     VALUES.each do |val, let|
-      roman << let * (n / val)
-      n = n % val
+      roman << let * (num / val)
+      num = num % val
     end
     roman
   end
