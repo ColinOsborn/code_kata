@@ -39,6 +39,10 @@ class Anagram
     first == second
   end
 
+  def self.characters(word1, word2)
+    word1.length == word2.length
+  end
+
   def self.sanitize(word)
     word.downcase.strip.split('')
   end
